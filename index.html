@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Sim</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="game-shell">
+    <div class="game-card">
+      <h1>Pokemon Sim</h1>
+      <p class="subtitle">Raise your creature, train hard, and win battles.</p>
+
+      <div class="battle-screen">
+        <div class="status-box enemy-box">
+          <h2>Wild Rival</h2>
+          <p>LV 5</p>
+          <div class="hp-label">HP</div>
+          <div class="hp-bar-outer">
+            <div id="enemy-hp-bar" class="hp-bar-inner enemy-hp-fill"></div>
+          </div>
+          <p id="enemy-hp-text">HP: 100 / 100</p>
+        </div>
+
+        <div class="pet-area">
+          <img
+            id="pet-img"
+            class="pet-image"
+            src="torhic.webp"
+            alt="Pocket Creature"
+          />
+        </div>
+
+        <div class="status-box player-box">
+          <h2 id="pet-name">Torchic</h2>
+          <p id="pet-level">LV 1</p>
+          <div class="hp-label">HP</div>
+          <div class="hp-bar-outer">
+            <div id="pet-hp-bar" class="hp-bar-inner player-hp-fill"></div>
+          </div>
+          <p id="pet-hp-text">HP: 10 / 10</p>
+        </div>
+      </div>
+
+      <div class="info-panel">
+        <p id="pet-weight">Weight: 10</p>
+        <p id="pet-happiness">Happiness: 10</p>
+        <p id="pet-health">Health: 10</p>
+        <p id="pet-skill">Skill: 0</p>
+        <p id="pet-exp">EXP: 0 / 10</p>
+      </div>
+
+      <div id="pet-message" class="notification"></div>
+
+      <div class="buttons">
+        <button id="treat-btn">Feed</button>
+        <button id="exercise-btn">Exercise</button>
+        <button id="play-btn">Play</button>
+        <button id="train-btn">Train</button>
+        <button id="heal-btn">Heal</button>
+        <button id="battle-btn">Battle</button>
+      </div>
+
+      <p class="footer-note">Tochi Awujo</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
